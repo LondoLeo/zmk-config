@@ -1,4 +1,0 @@
-name: zmk-keyboard-splaytoraid40
-build:
-  settings:
-    board_root: .
