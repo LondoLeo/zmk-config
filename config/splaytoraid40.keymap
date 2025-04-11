@@ -99,7 +99,8 @@
 #define BRW_BCK LG(LEFT)
 #define BRW_FWD LG(RIGHT)
 
-keymap {
+/ {
+    keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
