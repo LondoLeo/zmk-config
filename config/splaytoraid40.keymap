@@ -129,7 +129,7 @@
         };
         adjust_layer {
             bindings = <
-                    &kp SPC1 &kp SPC2 &kp SPC3 &kp SPC4 &kp SPC5 /**/      &kp F1    &kp F1      &kp F2      &kp F3      &kp F4
+                     &kp SPC1 &kp SPC2 &kp SPC3 &kp SPC4 &kp SPC5 /**/      &kp F1    &kp F1      &kp F2      &kp F3      &kp F4
          &kp BRW_BCK&kp TAB1 &kp TAB2 &kp TAB3 &kp TAB4 &kp TAB5 /**/      &kp H     &kp F5      &kp F6      &kp F7      &kp F8      &none
          &kp BRW_FWD&kp TAB6 &kp TAB7 &kp TAB8 &kp TAB9 &kp TAB0 /**/      &kp N     &kp F9      &kp F10     &kp F11     &kp F12     &none
                                          &trans      &trans      &trans  &trans     &trans    &trans       &trans    
