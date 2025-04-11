@@ -106,7 +106,7 @@
             bindings = <
                     &kp Q    &kp W       &kp E       &kp R       &kp T    /**/      &kp Y     &kp U       &kp I       &kp O       &kp P 
          &kp MINUS  &hll 1 A &hml LALT S &hml LGUI D &hml LCTL F &kp G    /**/      &kp H     &hmr RCTL J &hmr RGUI K &hmr RALT L &hlr 1 SEMI &kp EQUAL
-         &kp GRAVE  &kp B    &kp Z       &kp X       &kp C       &kp V    /**/      &kp N     &kp M       &kp COMM    &kp DOT     &kp SLASH   &kp QUOTE
+         &kp GRAVE  &kp B    &kp Z       &kp X       &kp C       &kp V    /**/      &kp N     &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp QUOTE
                                          &lt 3 TAB   &mt LSFT ESC&kp SPC &kp C_MUTE &lt 2 RET &mt RSFT BSPC&caps_word
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -115,7 +115,7 @@
             bindings = <
                     &kp EXCL &kp PIPE       &kp LBKT       &kp RBKT       &kp DLLR /**/      &kp SLASH &kp N1      &kp N2      &kp N3      &kp MINUS
          &none      &kp AT   &hml LALT BSLH &hml LGUI LPAR &hml LCTL RPAR &kp PRCNT/**/      &kp STAR  &hmr RCTL N4&hmr RGUI N5&hmr RALT N6&kp PLUS    &kp DOT  
-         &none      &kp HASH &none          &kp LBRC       &kp RBRC       &kp CARET/**/      &kp AMPS  &kp N7      &kp N8      &kp N9      &kp N0      &kp COMM 
+         &none      &kp HASH &none          &kp LBRC       &kp RBRC       &kp CARET/**/      &kp AMPS  &kp N7      &kp N8      &kp N9      &kp N0      &kp COMMA
                                          &trans      &trans      &trans  &trans     &trans    &trans       &trans    
             >;
         };
@@ -127,13 +127,13 @@
                                          &trans      &trans      &trans  &trans     &trans    &trans       &trans    
             >;
         };
-        // adjust_layer {
-        //     bindings = <
-        //             &kp SPC1 &kp SPC2 &kp SPC3 &kp SPC4 &kp SPC5 /**/      &kp F1    &kp F1      &kp F2      &kp F3      &kp F4
-        //  &BRW_BCK   &kp TAB1 &kp TAB2 &kp TAB3 &kp TAB4 &kp TAB5 /**/      &kp H     &kp F5      &kp F6      &kp F7      &kp F8      &none
-        //  &BRW_FWD   &kp TAB6 &kp TAB7 &kp TAB8 &kp TAB9 &kp TAB0 /**/      &kp N     &kp F9      &kp F10     &kp F11     &kp F12     &none
-        //                                  &trans      &trans      &trans  &trans     &trans    &trans       &trans    
-        //     >;
-        // };
+        adjust_layer {
+            bindings = <
+                    &kp SPC1 &kp SPC2 &kp SPC3 &kp SPC4 &kp SPC5 /**/      &kp F1    &kp F1      &kp F2      &kp F3      &kp F4
+         &BRW_BCK   &kp TAB1 &kp TAB2 &kp TAB3 &kp TAB4 &kp TAB5 /**/      &kp H     &kp F5      &kp F6      &kp F7      &kp F8      &none
+         &BRW_FWD   &kp TAB6 &kp TAB7 &kp TAB8 &kp TAB9 &kp TAB0 /**/      &kp N     &kp F9      &kp F10     &kp F11     &kp F12     &none
+                                         &trans      &trans      &trans  &trans     &trans    &trans       &trans    
+            >;
+        };
     };
 };
