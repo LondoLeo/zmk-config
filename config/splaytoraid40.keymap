@@ -83,7 +83,7 @@
 #define SPC2 LC(LG(N2))
 #define SPC3 LC(LG(N3))
 #define SPC4 LC(LG(N4))
-#define SPC5 LC(G(N5))
+#define SPC5 LC(LG(N5))
 
 #define TAB1 LG(N1)
 #define TAB2 LG(N2)
@@ -113,8 +113,8 @@
         };
         lower_layer {
             bindings = <
-                    &kp EXCL &kp PIPE       &kp LBKT       &kp RBKT       &kp DLLR /**/      &kp SLASH &kp N1      &kp N2      &kp N3      &kp P 
-         &none      &kp AT   &hml LALT BSLH &hml LGUI LPAR &hml LCTL RPAR &kp PRCNT/**/      &kp STAR  &hmr RCTL N4&hmr RGUI N5&hmr RALT N6&hlr 1 SEMI &kp DOT  
+                    &kp EXCL &kp PIPE       &kp LBKT       &kp RBKT       &kp DLLR /**/      &kp SLASH &kp N1      &kp N2      &kp N3      &kp MINUS
+         &none      &kp AT   &hml LALT BSLH &hml LGUI LPAR &hml LCTL RPAR &kp PRCNT/**/      &kp STAR  &hmr RCTL N4&hmr RGUI N5&hmr RALT N6&kp PLUS    &kp DOT  
          &none      &kp HASH &none          &kp LBRC       &kp RBRC       &kp CARET/**/      &kp AMPS  &kp N7      &kp N8      &kp N9      &kp N0      &kp COMM 
                                          &trans      &trans      &trans  &trans     &trans    &trans       &trans    
             >;
@@ -122,8 +122,8 @@
         raise_layer {
             bindings = <
                     &none    &none       &none       &none       &none    /**/      &none     &none       &none       &none       &none 
-         &none      &none    &kp LALT    &hml LGUI D &hml LCTL F &kp G    /**/      &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &none       &none      
-         &none      &none    &none       &none       &none       &none    /**/      &none     &none       &kp COMM    &kp DOT     &none       &none      
+         &none      &none    &kp LALT    &kp LGUI    &kp LCTL    &none    /**/      &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &none       &none      
+         &none      &none    &none       &none       &none       &none    /**/      &none     &none       &none       &none       &none       &none      
                                          &trans      &trans      &trans  &trans     &trans    &trans       &trans    
             >;
         };
