@@ -106,7 +106,7 @@
             bindings = <
                     &kp Q    &kp W       &kp E       &kp R       &kp T    /**/      &kp Y     &kp U       &kp I       &kp O       &kp P 
          &kp MINUS  &hll 1 A &hml LALT S &hml LGUI D &hml LCTL F &kp G    /**/      &kp H     &hmr RCTL J &hmr RGUI K &hmr RALT L &hlr 1 SEMI &kp EQUAL
-         &kp GRAVE  &kp B    &kp Z       &kp X       &kp C       &kp V    /**/      &kp N     &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp QUOTE
+         &kp GRAVE  &kp B    &kp Z       &kp X       &kp C       &kp V    /**/      &kp N     &kp M       &kp COMMA   &kp DOT     &kp SLASH   &kp APOS
                                          &lt 3 TAB   &mt LSFT ESC&kp SPC &kp C_MUTE &lt 2 RET &mt RSFT BSPC&caps_word
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
