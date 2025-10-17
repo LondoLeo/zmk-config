@@ -80,89 +80,18 @@
 
 
     // Numbers 
-    // num1: quote_num1 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp SQT>, <&kp N1>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num1: SHIFT_OVERRIDE(SQT, N1);
-    // num2: lbkt_num2 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp LBKT>, <&kp N2>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num2: SHIFT_OVERRIDE(LBKT, N2);
-    // num3: lbrc_num3 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp LBRC>, <&kp N3>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num3: SHIFT_OVERRIDE(LBRC, N3);
-    // num4: lpar_num4 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp LPAR>, <&kp N4>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num4: SHIFT_OVERRIDE(LPAR, N4);
-    // num5: prcnt_num5 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp PRCNT>, <&kp N5>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num5: SHIFT_OVERRIDE(PRCNT, N5);
-    // num6: at_num6 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp AT>, <&kp N6>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num6: SHIFT_OVERRIDE(AT, N6);
-    // num7: rpar_num7 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp RPAR>, <&kp N7>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num7: SHIFT_OVERRIDE(RPAR, N7);
-    // num8: rbrc_num8 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp RBRC>, <&kp N8>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num8: SHIFT_OVERRIDE(RBRC, N8);
-    // num9: rbkt_num9 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp RBKT>, <&kp N9>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num9: SHIFT_OVERRIDE(RBKT, N9);
-    // num0: dquote_num0 {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp DQT>, <&kp N0>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     num0: SHIFT_OVERRIDE(DQT, N0);
-    // comm: comma_semicolon {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp COMMA>, <&kp SEMI>;
-    //     mods = <(MOD_LSFT)>;
-    // };
+
     comm: SHIFT_OVERRIDE(COMMA, SEMI);
-    // dot: dot_colon {
-    //     compatible = "zmk,behavior-mod-morph";
-    //     #binding-cells = <0>;
-    //     bindings = <&kp DOT>, <&kp COLON>;
-    //     mods = <(MOD_LSFT)>;
-    // };
     dot: SHIFT_OVERRIDE(DOT, COLON);
 
     keymap {
@@ -191,9 +120,9 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-                &none       &none       &none      &none          &none         &none           &none          &none       &none      &none 
-                &none       &sk LALT    &sk LCMD   &sk LCTRL      &none         &kp LEFT        &kp DOWN       &kp UP      &kp RIGHT  &kp LC(A)
-                &none       &none       &none      &none          &none         &none           &none          &none       &none      &none 
+                &none       &none       &none      &none          &none         &kp LC(PG_UP)   &kp LG(LEFT)   &kp LG(RIGHT)&none      &kp DEL 
+                &none       &sk LALT    &sk LCMD   &sk LCTRL      &none         &kp LEFT        &kp DOWN       &kp UP       &kp RIGHT  &kp LC(A)
+                &none       &none       &none      &none          &none         &kp LC(PG_DN)   &kp LA(LEFT)   &kp LA(RIGHT)&none      &none 
                                                    &trans         &trans        &trans          &trans
             >;
         };
@@ -212,7 +141,7 @@
             display-name = "System";
             bindings = <
                 &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4  &rgb_ug RGB_TOG &none          &none        &none      &none
-                &none        &kp C_PREV     &kp C_NEXT   &kp C_PP       &none         &none           &kp C_VOL_DN   &kp C_VOL_UP &none      &none
+                &none        &kp C_PREV     &kp C_NEXT   &kp C_PP       &none         &kp C_MUTE      &kp C_VOL_DN   &kp C_VOL_UP &none      &none
                 &bt BT_CLR   &none          &none        &none          &none         &none           &none          &none        &studio_unlock &bootloader
                                                          &trans         &trans        &trans          &trans
             >;
