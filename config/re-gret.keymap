@@ -60,7 +60,7 @@
             quick-tap-ms = <QUICK_TAP>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
-        }
+        };
         blt: balanced_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
