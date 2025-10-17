@@ -70,73 +70,73 @@
     };
 
     // Numbers 
-    num1: number1 {
+    num1: quote_num1 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp SQT>, <&kp N1>;
         mods = <(MOD_LSFT)>;
     };
-    num2: number2 {
+    num2: lbkt_num2 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp LBKT>, <&kp N2>;
         mods = <(MOD_LSFT)>;
     };
-    num3: num3 {
+    num3: lbrc_num3 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp LBRC>, <&kp N3>;
         mods = <(MOD_LSFT)>;
     };
-    num4: number4 {
+    num4: lpar_num4 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp LPAR>, <&kp N4>;
         mods = <(MOD_LSFT)>;
     };
-    num5: number5 {
+    num5: prcnt_num5 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp PRCNT>, <&kp N5>;
         mods = <(MOD_LSFT)>;
     };
-    num6: number6 {
+    num6: at_num6 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp AT>, <&kp N6>;
         mods = <(MOD_LSFT)>;
     };
-    num7: number7 {
+    num7: rpar_num7 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp RPAR>, <&kp N7>;
         mods = <(MOD_LSFT)>;
     };
-    num8: number8 {
+    num8: rbrc_num8 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp RBRC>, <&kp N8>;
         mods = <(MOD_LSFT)>;
     };
-    num9: number9 {
+    num9: rbkt_num9 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp RBKT>, <&kp N9>;
         mods = <(MOD_LSFT)>;
     };
-    num0: number0 {
+    num0: dquote_num0 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp DQT>, <&kp N0>;
         mods = <(MOD_LSFT)>;
     };
-    semi {
+    comm: comma_semicolon {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp COMMA>, <&kp SEMI>;
         mods = <(MOD_LSFT)>;
     };
-    colon {
+    dot: dot_colon {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&kp DOT>, <&kp COLON>;
@@ -151,7 +151,7 @@
             bindings = <
    /* 0 */      &kp Q      &kp W       &kp F       &kp P          &kp B          &kp Z          &kp L          &kp U       &kp Y       &kp BSPC
    /* 10 */     &kp A      &hml LALT R &hml LGUI S &hml LCTRL T   &kp G          &kp M          &hmr RCTRL N   &hmr RGUI E &hmr RALT I &kp O
-   /* 20 */     &kp J      &kp X       &kp C       &kp D          &kp V          &kp K          &kp H          &kp COMMA   &kp DOT     &kp FSLH
+   /* 20 */     &kp J      &kp X       &kp C       &kp D          &kp V          &kp K          &kp H          &comm       &dot        &kp FSLH
    /* 30 */                                        &sk LSHFT      &blt FUN SPACE &qlt NAV RET   &mo SYM
             >;
         };
@@ -189,10 +189,10 @@
         system_layer {
             display-name = "System";
             bindings = <
-                &none       &studio_unlock &none      &none          &none         &rgb_ug RGB_TOG &none          &none        &none      &none
-                &none       &kp C_PREV     &kp C_NEXT &kp C_PP       &none         &none           &kp C_VOL_DN   &kp C_VOL_UP &none      &none
-                &bt BT_CLR  &none          &none      &none          &none         &none           &none          &none        &none      &bootloader
-                                                      &trans         &trans        &trans          &trans
+                &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4  &rgb_ug RGB_TOG &none          &none        &none      &none
+                &none        &kp C_PREV     &kp C_NEXT   &kp C_PP       &none         &none           &kp C_VOL_DN   &kp C_VOL_UP &none      &none
+                &bt BT_CLR   &none          &none        &none          &none         &none           &none          &none        &studio_unlock &bootloader
+                                                         &trans         &trans        &trans          &trans
             >;
         };
     };
