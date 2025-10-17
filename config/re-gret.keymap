@@ -7,6 +7,7 @@
 #define NAV 2
 #define FUN 3
 #define SYS 4
+#define CG(x) LG(LC(x))
 
 / {
     behaviors {
@@ -121,7 +122,6 @@
         mods = <(MOD_LSFT)>;
     };
 
-    #define GC(x) LC(LG(x))
     keymap {
         compatible = "zmk,keymap";
 
@@ -158,9 +158,9 @@
         function_layer {
             display-name = "Function";
             bindings = <
-                &kp CG(N6)    &kp CG(N7)   &kp CG(N8)   &kp CG(N9)    &kp CG(N0)    &none     &none         &none        &none        &none    
-                &kp CG(N1)    &kp CG(N2)   &kp CG(N3)   &kp CG(N4)    &kp CG(N5)    &none     &none         &none        &none        &none       
-                &none         &none        &none        &none         &none         &none     &none         &none        &none        &none 
+                &kp CG(N6)    &kp CG(N7)   &kp CG(N8)   &kp CG(N9)    &kp CG(N0)    &kp F1    &kp F2        &kp F3       &kp F4       &kp F5   
+                &kp CG(N1)    &kp CG(N2)   &kp CG(N3)   &kp CG(N4)    &kp CG(N5)    &kp F6    &kp F7        &kp F8       &kp F9       &kp F10      
+                &none         &none        &none        &none         &none         &kp F11   &kp F12       &none        &none        &none 
                                                         &trans        &trans        &trans    &trans
             >;
         };
