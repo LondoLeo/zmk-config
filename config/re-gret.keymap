@@ -107,7 +107,7 @@
     //     bindings = <&kp LPAR>, <&kp N4>;
     //     mods = <(MOD_LSFT)>;
     // };
-    num4: SHIFT_OVERRIDE(SQT, N1);
+    num4: SHIFT_OVERRIDE(LPAR, N4);
     // num5: prcnt_num5 {
     //     compatible = "zmk,behavior-mod-morph";
     //     #binding-cells = <0>;
@@ -150,18 +150,20 @@
     //     mods = <(MOD_LSFT)>;
     // };
     num0: SHIFT_OVERRIDE(DQT, N0);
-    comm: comma_semicolon {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp COMMA>, <&kp SEMI>;
-        mods = <(MOD_LSFT)>;
-    };
-    dot: dot_colon {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DOT>, <&kp COLON>;
-        mods = <(MOD_LSFT)>;
-    };
+    // comm: comma_semicolon {
+    //     compatible = "zmk,behavior-mod-morph";
+    //     #binding-cells = <0>;
+    //     bindings = <&kp COMMA>, <&kp SEMI>;
+    //     mods = <(MOD_LSFT)>;
+    // };
+    comm: SHIFT_OVERRIDE(COMMA, SEMI);
+    // dot: dot_colon {
+    //     compatible = "zmk,behavior-mod-morph";
+    //     #binding-cells = <0>;
+    //     bindings = <&kp DOT>, <&kp COLON>;
+    //     mods = <(MOD_LSFT)>;
+    // };
+    dot: SHIFT_OVERRIDE(DOT, COLON);
 
     keymap {
         compatible = "zmk,keymap";
