@@ -8,6 +8,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+      revision: main
     - name: zmk-keyboard-re-gret
       remote: rschenk
       revision: main
