@@ -41,7 +41,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <RIGHT_AND_THUMBS>;
         };
@@ -53,7 +52,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <LEFT_AND_THUMBS>;
         };
@@ -65,7 +63,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            hold-while-undecided;
             hold-trigger-on-release;
         };
             
@@ -77,7 +74,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            hold-while-undecided;
             hold-trigger-on-release;
         };
         qlt: quick_layer_tab {
@@ -88,7 +84,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            hold-while-undecided;
             hold-trigger-on-release;
         };
     };
