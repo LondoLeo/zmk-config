@@ -6,7 +6,7 @@
 
 #define TAPPING_TERM 200
 #define TAPPING_IDLE 80
-#define QUICK_TAP 100
+#define QUICK_TAP 200
 
 #define COMBO_IDLE 80
 #define COMBO_TERM 25
