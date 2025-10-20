@@ -36,11 +36,11 @@
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <RIGHT_AND_THUMBS>;
@@ -48,11 +48,11 @@
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <LEFT_AND_THUMBS>;
@@ -60,29 +60,36 @@
         qmt: quick_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
+            
         blt: balanced_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            flavor = "balanced";
-            bindings = <&mo>, <&kp>;
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
         qlt: quick_layer_tab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "hold-preferred";
             tapping-term-ms = <TAPPING_TERM>;
             require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
-            flavor = "hold-preferred";
-            bindings = <&mo>, <&kp>;
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
     };
  
@@ -95,7 +102,7 @@
         ger_o { key-positions = <6 7>; bindings = <&kp RA(O)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
         ger_u { key-positions = <7 8>; bindings = <&kp RA(U)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
     };
-
+     
     conditional_layers {
         compatible = "zmk,conditional-layers";
         sys_layer {
@@ -119,7 +126,7 @@
 
     comm: SHIFT_OVERRIDE(COMMA, SEMI);
     dot: SHIFT_OVERRIDE(DOT, COLON);
-
+    
     keymap {
         compatible = "zmk,keymap";
 
