@@ -118,6 +118,9 @@
 
     comm: SHIFT_OVERRIDE(COMMA, SEMI);
     dot: SHIFT_OVERRIDE(DOT, COLON);
+
+    minus: SHIFT_OVERRIDE(MINUS, MINUS);
+    equal: SHIFT_OVERRIDE(EQUAL, EQUAL);
     
     keymap {
         compatible = "zmk,keymap";
@@ -134,7 +137,7 @@
         sym_layer {
             display-name = "Symbol";
             bindings = <
-                &kp GRAVE  &kp EXCL   &kp EQUAL   &kp MINUS       &kp PLUS      &kp CARET       &kp LT         &kp GT      &kp UNDER  &trans   
+                &kp GRAVE  &kp EXCL   &equal      &minus          &kp PLUS      &kp CARET       &kp LT         &kp GT      &kp UNDER  &trans   
                 &num1      &num2      &num3       &num4           &num5         &num6           &num7          &num8       &num9      &num0    
                 &kp DLLR   &kp TILDE  &kp PIPE    &kp AMPS        &kp HASH      &none           &kp STAR       &kp BSLH    &kp COLON  &kp RA(N5)
                                                   &trans          &trans        &trans          &trans
