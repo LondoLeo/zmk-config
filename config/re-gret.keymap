@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define TAPPING_TERM 200
-#define TAPPING_IDLE 80
+#define TAPPING_IDLE 100
 #define QUICK_TAP 200
 
 #define COMBO_IDLE 80
@@ -61,11 +61,9 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
             tapping-term-ms = <TAPPING_TERM>;
-            require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
             hold-trigger-on-release;
         };
-            
         blt: balanced_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -82,7 +80,6 @@
             bindings = <&mo>, <&kp>;
             flavor = "hold-preferred";
             tapping-term-ms = <TAPPING_TERM>;
-            require-prior-idle-ms = <TAPPING_IDLE>;
             quick-tap-ms = <QUICK_TAP>;
             hold-trigger-on-release;
         };
