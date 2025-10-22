@@ -27,6 +27,8 @@
         mods = <(MOD_LSFT)>;\
     }
 
+#define NUM(KC, NUMBER) shift_morph_##KC_##NUMBER: SHIFT_OVERRIDE(KC, NUMBER)
+
 #define LEFT_AND_THUMBS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33
 #define RIGHT_AND_THUMBS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33
 
@@ -137,7 +139,7 @@
         sym_layer {
             display-name = "Symbol";
             bindings = <
-                &kp GRAVE  &kp EXCL   &equal      &minus          &kp PLUS      &kp CARET       &kp LT         &kp GT      &kp UNDER  &trans   
+                &kp EXCL   &minus     &kp LT      &equal          &kp PLUS      &kp CARET       &kp GRAVE      &kp GT      &kp UNDER  &trans   
                 &num1      &num2      &num3       &num4           &num5         &num6           &num7          &num8       &num9      &num0    
                 &kp DLLR   &kp TILDE  &kp PIPE    &kp AMPS        &kp HASH      &none           &kp STAR       &kp BSLH    &kp COLON  &kp RA(N5)
                                                   &trans          &trans        &trans          &trans
