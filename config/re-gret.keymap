@@ -139,9 +139,9 @@
         sym_layer {
             display-name = "Symbol";
             bindings = <
-                &kp EXCL   &minus     &kp LT      &equal          &kp PLUS      &kp CARET       &kp GRAVE      &kp GT      &kp UNDER  &trans   
+                &kp EXCL   &kp LT     &kp GT      &kp UNDER       &kp PLUS      &kp CARET       &kp GRAVE      &minus      &equal     &trans   
                 &num1      &num2      &num3       &num4           &num5         &num6           &num7          &num8       &num9      &num0    
-                &kp DLLR   &kp TILDE  &kp PIPE    &kp AMPS        &kp HASH      &none           &kp STAR       &kp BSLH    &kp COLON  &kp RA(N5)
+                &kp DLLR   &kp TILDE  &kp PIPE    &kp AMPS        &kp HASH      &kp RA(N5)      &kp STAR       &kp BSLH    &kp COLON  &trans    
                                                   &trans          &trans        &trans          &trans
             >;
         };
