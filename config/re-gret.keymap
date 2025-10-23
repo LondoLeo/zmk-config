@@ -92,8 +92,8 @@
         // esc { key-positions = <22 23>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
         // tab { key-positions = <26 27>; bindings = <&kp TAB>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
         ger_s { key-positions = <1 2>; bindings = <&kp RA(S)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
-        ger_a { key-positions = <2 3>; bindings = <&kp RA(A)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
-        ger_o { key-positions = <6 7>; bindings = <&kp RA(O)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+        ger_a { key-positions = <22 23>; bindings = <&kp RA(A)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+        ger_o { key-positions = <26 27>; bindings = <&kp RA(O)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
         ger_u { key-positions = <7 8>; bindings = <&kp RA(U)>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE>;};
     };
      
@@ -107,7 +107,7 @@
 
 
     // Numbers 
-    num1: SHIFT_OVERRIDE(MINUS, N1);
+    num1: SHIFT_OVERRIDE(SQT, N1);
     num2: SHIFT_OVERRIDE(LBKT, N2);
     num3: SHIFT_OVERRIDE(LBRC, N3);
     num4: SHIFT_OVERRIDE(LPAR, N4);
@@ -116,7 +116,7 @@
     num7: SHIFT_OVERRIDE(RPAR, N7);
     num8: SHIFT_OVERRIDE(RBRC, N8);
     num9: SHIFT_OVERRIDE(RBKT, N9);
-    num0: SHIFT_OVERRIDE(EQUAL, N0);
+    num0: SHIFT_OVERRIDE(DQT, N0);
 
     comm: SHIFT_OVERRIDE(COMMA, SEMI);
     dot: SHIFT_OVERRIDE(DOT, COLON);
@@ -132,14 +132,14 @@
             bindings = <
                 &kp Q      &kp W       &kp F       &kp P          &kp B          &kp Z          &kp L          &kp U       &kp Y       &kp BSPC
                 &kp A      &hml LALT R &hml LGUI S &hml LCTRL T   &kp G          &kp M          &hmr RCTRL N   &hmr RGUI E &hmr RALT I &kp O
-                &kp J      &kp X       &kp C       &kp D          &kp V          &kp K          &kp H          &comm       &dot        &kp SQT
+                &kp J      &kp X       &kp C       &kp D          &kp V          &kp K          &kp H          &comm       &dot        &kp FSLH
                                                    &qmt LSHFT ESC &blt FUN SPACE &qlt NAV RET   &qlt SYM TAB
             >;
         };
         sym_layer {
             display-name = "Symbol";    
             bindings = <
-                &kp GRAVE  &kp EXCL   &kp FSLH    &kp QUESTION    &kp PLUS      &kp CARET       &kp LT         &kp GT      &kp UNDER  &trans   
+                &kp GRAVE  &kp EXCL   &equal      &minus          &kp PLUS      &kp CARET       &kp LT         &kp GT      &kp UNDER  &trans   
                 &num1      &num2      &num3       &num4           &num5         &num6           &num7          &num8       &num9      &num0    
                 &kp DLLR   &kp TILDE  &kp PIPE    &kp AMPS        &kp HASH      &none           &kp STAR       &kp BSLH    &kp COLON  &kp RA(N5)
                                                   &trans          &trans        &trans          &trans
