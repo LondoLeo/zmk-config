@@ -91,10 +91,8 @@
         compatible = "zmk,combos";
         // esc { key-positions = <22 23>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
         // tab { key-positions = <26 27>; bindings = <&kp TAB>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
-        ger_s { key-positions = <1 2>; bindings = <&kp RA(S)>;  timeout-ms = <COMBO_TERM>; layers = <BASE>;};
-        ger_a { key-positions = <22 23>; bindings = <&kp RA(A)>;  timeout-ms = <COMBO_TERM>; layers = <BASE>;};
-        ger_o { key-positions = <26 27>; bindings = <&kp RA(O)>;  timeout-ms = <COMBO_TERM>; layers = <BASE>;};
-        ger_u { key-positions = <7 8>; bindings = <&kp RA(U)>;  timeout-ms = <COMBO_TERM>; layers = <BASE>;};
+        esc { key-positions = <22 23>; bindings = <&sk RIGHTALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
+        tab { key-positions = <26 27>; bindings = <&sk RIGHTALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
     };
      
     conditional_layers {
