@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define TAPPING_TERM 200
-#define TAPPING_IDLE 130
+#define TAPPING_IDLE 120
 #define QUICK_TAP 200
 
 #define COMBO_IDLE 80
@@ -146,9 +146,9 @@
         nav_layer {
             display-name = "Navigation";
             bindings = <
-                &none       &none       &kp HOME   &kp END        &kp PG_UP     &kp LC(PG_UP)   &kp LG(LEFT)   &kp LG(RIGHT)&none      &kp DEL 
+                &none       &none       &kp HOME   &kp END        &none         &none           &kp LG(LEFT)   &kp LG(RIGHT)&none      &kp DEL 
                 &none       &sk LALT    &sk LCMD   &sk LCTRL      &none         &kp LEFT        &kp DOWN       &kp UP       &kp RIGHT  &kp LC(A)
-                &none       &none       &none      &none          &kp PG_DN     &kp LC(PG_DN)   &kp LA(LEFT)   &kp LA(RIGHT)&none      &none 
+                &none       &none       &kp PG_UP  &kp PG_DN      &none         &none           &kp LA(LEFT)   &kp LA(RIGHT)&none      &none 
                                                    &trans         &trans        &trans          &trans
             >;
         };
@@ -157,7 +157,7 @@
             bindings = <
                 &kp CG(N6)    &kp CG(N7)   &kp CG(N8)   &kp CG(N9)    &kp CG(N0)    &kp F1    &kp F2        &kp F3       &kp F4       &kp F5   
                 &kp CG(N1)    &kp CG(N2)   &kp CG(N3)   &kp CG(N4)    &kp CG(N5)    &kp F6    &kp F7        &kp F8       &kp F9       &kp F10      
-                &none         &none        &none        &none         &none         &kp F11   &kp F12       &none        &none        &none 
+                &none         &none        &kp LC(PG_UP)&kp LC(PG_DN) &none         &kp F11   &kp F12       &none        &none        &none 
                                                         &trans        &trans        &trans    &trans
             >;
         };
