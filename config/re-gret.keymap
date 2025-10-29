@@ -92,8 +92,8 @@
         compatible = "zmk,combos";
         // esc { key-positions = <22 23>; bindings = <&kp ESC>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
         // tab { key-positions = <26 27>; bindings = <&kp TAB>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
-        esc { key-positions = <22 23>; bindings = <&sk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
-        tab { key-positions = <26 27>; bindings = <&sk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;};
+        ralt1 { key-positions = <22 23>; bindings = <&sk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>; layers = <BASE QWERTY SYM>;};
+        ralt2 { key-positions = <26 27>; bindings = <&sk RIGHT_ALT>; require-prior-idle-ms = <COMBO_IDLE>; timeout-ms = <COMBO_TERM>;layers = <BASE QWERTY SYM>;};
     };
      
     conditional_layers {
@@ -137,12 +137,12 @@
                                                    &qmt LSHFT ESC &blt FUN SPACE &qlt NAV RET   &qlt SYM TAB
             >;
         };
-        qwerty_layer {
+        qwerty_layer { // Not Really Finished
             display-name = "QWERTY";
             bindings = <
-                &kp Q      &kp W       &kp E       &kp R          &kp T          &kp Y          &kp U          &kp I       &kp O       &kp BSPC
+                &kp Q      &kp W       &kp E       &kp R          &kp T          &kp P          &kp U          &kp I       &kp O       &kp BSPC
                 &kp A      &hml LALT S &hml LGUI D &hml LCTRL F   &kp G          &kp H          &hmr RCTRL J   &hmr RGUI K &hmr RALT L &kp SEMI
-                &kp Z      &kp X       &kp C       &kp V          &kp B          &kp N          &kp M          &kp COMMA   &kp DOT     &kp FSLH
+                &kp X      &kp C       &kp D       &kp V          &kp Z          &kp N          &kp M          &kp COMMA   &kp DOT     &kp FSLH
                                                    &qmt LSHFT ESC &blt FUN SPACE &qlt NAV RET   &qlt SYM TAB
             >;
         };
@@ -169,7 +169,7 @@
             bindings = <
                 &kp CG(N6)    &kp CG(N7)   &kp CG(N8)   &kp CG(N9)    &kp CG(N0)    &kp F1    &kp F2        &kp F3       &kp F4       &kp F5   
                 &kp CG(N1)    &kp CG(N2)   &kp CG(N3)   &kp CG(N4)    &kp CG(N5)    &kp F6    &kp F7        &kp F8       &kp F9       &kp F10      
-                &none         &none        &kp LC(PG_UP)&kp LC(PG_DN) &none         &kp F11   &kp F12       &none        &none        &none 
+                &none         &none        &kp LC(PG_UP)&kp LC(PG_DN) &kp CG(W)     &kp F11   &kp F12       &none        &none        &none 
                                                         &trans        &trans        &trans    &trans
             >;
         };
