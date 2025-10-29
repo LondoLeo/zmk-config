@@ -11,16 +11,14 @@
 #define COMBO_IDLE 50
 #define COMBO_TERM 25
 
-#define CG(x) LG(LC(x))
+#define BASE 0
+#define QWERTY 1
+#define SYM 2
+#define NAV 3
+#define FUN 4
+#define SYS 5
 
-enum layer_names {
-    BASE,
-    QWERTY,
-    SYM,
-    NAV,
-    FUN,
-    SYS
-}
+#define CG(x) LG(LC(x))
 
 #define SHIFT_OVERRIDE(KEY1, KEY2) \
     override_##KEY1_##KEY2 { \
